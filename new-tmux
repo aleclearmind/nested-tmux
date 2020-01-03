@@ -1,0 +1,7 @@
+#!/bin/bash
+
+TMUX_PARENT=$(basename "$TMUX")
+TMUX_PARENT="${TMUX_PARENT%%,*}"
+export TMUX_PARENT
+
+tmux -L "r$RANDOM"
