@@ -1,7 +1,7 @@
-#!/bin/bash
+#! /usr/bin/env bash
 
 TMUX_PARENT=$(basename "$TMUX")
 TMUX_PARENT="${TMUX_PARENT%%,*}"
 export TMUX_PARENT
 
-tmux -L "r$RANDOM"
+tmux -f "$THE_CONF_FILE" -L "r$RANDOM"
