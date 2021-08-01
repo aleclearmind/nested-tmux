@@ -19,10 +19,10 @@ tmux
 
 # Shortcuts
 
-* `Ctrl + a, Ctrl + c` or `Ctrl + t`: create a new window
-* `Ctrl + a, Ctrl + s`: create a new nested tmux session and ask a name for it
-* `Ctrl + a, Ctrl + A`: switch to last window
-* `Ctrl + a, A`: rename current window
+* `Ctrl + z, Ctrl + c` or `Ctrl + t`: create a new window
+* `Ctrl + z, Ctrl + s`: create a new nested tmux session and ask a name for it
+* `Ctrl + z, Ctrl + A`: switch to last window
+* `Ctrl + z, A`: rename current window
 * `Alt + Right`: move to the next window of the current row
 * `Alt + Left`: move to the previous window of the current row
 * `Alt + Up`: move to the inner tmux session
