@@ -1,0 +1,6 @@
+#!/bin/bash
+
+TMUX_PARENT=$(basename "$TMUX")
+TMUX_PARENT="${TMUX_PARENT%%,*}"
+
+tmux -L "$TMUX_PARENT" source ~/.tmux.conf.d/nested-tmux/active-row.conf
