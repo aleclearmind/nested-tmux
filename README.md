@@ -8,12 +8,25 @@ This is a simple tmux configuration enabling to have arbitrarily many nested tmu
 
 # Quick start
 
+The easiest and recommended way to install is as a [TPM
+plugin](https://github.com/tmux-plugins/tpm#installation). Add this line to your
+`~/.tmux.conf`:
+
+```tmux
+set -g @plugin 'aleclearmind/nested-tmux'
+```
+
+Hit prefix + I to fetch the plugin and source it.
+
+Alternatively, install and use directly without TPM:
+
 ```
 mkdir ~/.tmux.conf.d/
 cd ~/.tmux.conf.d/
 git clone https://github.com/aleclearmind/nested-tmux.git
 mv ~/.tmux.conf ~/.tmux.conf.backup
-echo "source ~/.tmux.conf.d/nested-tmux/active-row.conf" > ~/.tmux.conf
+echo 'TPM_PLUGIN_DIR="~/.tmux.conf.d/nested-tmux"' > ~/.tmux.conf
+echo 'source "$TPM_PLUGIN_DIR/active-row.conf"' >> ~/.tmux.conf
 tmux
 ```
 
